@@ -1,8 +1,8 @@
 language: scala
-sudo: false
 
 scala:
-	- 2.12.2
+   - 2.10.4
+   - 2.12.2
 
-notifications:
-        email: false
+script:
+   - sbt ++$TRAVIS_SCALA_VERSION test
